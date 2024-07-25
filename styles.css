@@ -1,0 +1,141 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nn{
+    font-size: 2.5em;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Update the header styles */
+header {
+    background-color: #55b3ae;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-left: 10px; /* Adjust as needed */
+}
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+}
+
+nav ul li a:visited {
+    color: #4d29e9; /* Color for visited links */
+}
+
+
+nav ul li a.active {
+    background-color: #fff; /* Background color for active link */
+    color: #55b3ae; /* Text color for active link */
+}
+
+.logo img {
+    height: 50px; /* Adjust the height of the logo as needed */
+    margin-right: 10px; /* Adjust spacing between logo and heading */
+}
+
+/* Update the hero section */
+.hero {
+    height: 100vh;
+    background-image: url('4.jpeg'); /* Replace with your actual path to the background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+}
+
+.about,
+.admission,
+.contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #55b3ae;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between images */
+    margin-top: 20px; /* Optional: Adjust spacing from the content above */
+}
+
+.image-item {
+    flex: 0 0 auto;
+    width: 200px; /* Adjust image item width as needed */
+    height: 200px; /* Adjust image item height as needed */
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    transition: transform 0.3s ease;
+}
+
+.image-item:hover img {
+    transform: scale(1.1); /* Optional: Zoom effect on hover */
+}
+.add{
+    height: auto;
+    width: auto;
+    border: solid 2px rebeccapurple;
+    border-radius: 20px;
+}
